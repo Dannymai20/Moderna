@@ -1,0 +1,25 @@
+<%- include('../partials/header.ejs')%>
+
+    <div id="background_image">
+        <section id="connections_content">
+            <% if(connections.length){ %>
+                <h2>Tech Conferences</h2>
+                <%connections.forEach(connection=>{%>
+                    <ul><% if(connection.topic === 'Conference' ){ %>
+                        <li><a href="/connections/<%=connection.id%>"><%= connection.name %></a></li>
+                        <%}%> </ul>
+                            <%})%>
+                <h2>Tech Opportunities</h2>
+                    <%connections.forEach(connection=>{%>
+                        <ul><% if(connection.topic==='Opportunity' ){ %>
+                                <li><a href="/connections/<%=connection.id%>"> <%= connection.name %></a></li>
+                                    <%}%> </ul>
+                                        <%})%> 
+                                            <%} else{%>
+                                                <p>There are no connections to display</p>
+                                                <%}%>
+        </section>
+    </div>
+
+
+    <%- include('../partials/footer.ejs')%>

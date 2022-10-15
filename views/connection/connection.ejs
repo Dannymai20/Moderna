@@ -1,0 +1,21 @@
+<%- include('../partials/header.ejs')%>
+
+    <div id="background_image">
+        <section id="connection">
+            <h1><%= connection.name%></h1>
+            <form>
+                <input type="submit" value="Update" class="button" formmethod="GET" formaction="/connections/<%= connection.id%>/edit">
+                <input type="submit" value="Delete" class="button" formmethod="POST" formaction="/connections/<%= connection.id%>?_method=DELETE">
+            </form>  
+            <div class="connectionContent">
+                <img src="<%= connection.image%>" alt="Outlook Picture">
+                <h3>Hosted by <%= connection.host%></h3>
+                <p><% connection.date%> <br> <%= connection.start%> - <%= connection.end%> <br><%= connection.location%></p>
+            </div>
+            <h1>Details</h1>
+            <p id="details"><%= connection.details%></p>
+        </section>
+    </div>
+
+
+    <%- include('../partials/footer.ejs')%>

@@ -1,0 +1,29 @@
+<%- include('../partials/header.ejs')%>
+
+
+    <div id="background_image">
+        <div id="newConnectionForm">
+            <form action="/connections" method ='POST'>
+                <label>Topic:
+                    <select name="topic">
+                        <option value= "Conference" name="Conference">Conference</option>
+                        <option value= "Opportunity" name="Opportunity">Opportunity</option>
+                    </select>
+                </label>
+                <br>
+                <label>Title: <input type="text" name="name" required="required"></label>
+                <label>Host: <input type="text" name="host" required="required"> </label>
+                <label>Details: <textarea name="details" cols="20" rows="4">Description</textarea></label>
+                <br>
+                <label>Location: <input type="text" name="location" required="required"></label>
+                <label>When: <input type="date" name="date" value="2022-02-04"></label>
+                <label>Start: <input type="time" name="start"></label>
+                <label>End: <input type="time" name="end"></label>
+                <label>Image URL: <input type="url" name="image"></label>
+                <button id="formbutton">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+ <%- include('../partials/footer.ejs')%>

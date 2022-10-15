@@ -1,0 +1,22 @@
+<%- include('../partials/header.ejs')%>
+
+
+    <div id="background_image">
+        <div id="newConnectionForm">
+            <form method ="POST" action="/connections/<%= connection.id%>?_method=PUT">
+                <label>Title: <input type="text" name="name" value="<%= connection.name%>" required="required"></label>
+                <label>Host: <input type="text" name="host" value="<%- connection.host%>" required="required"> </label>
+                <label>Details: <textarea name="details" cols="20" rows="4"><%= connection.details%></textarea></label>
+                <br>
+                <label>Location: <input type="text" name="location" value="<%= connection.location%>" required="required"></label>
+                <label>When: <input type="date" name="date" value="<%= connection.date%>"></label>
+                <label>Start: <input type="time" name="start" value="<% connection.start%>"></label>
+                <label>End: <input type="time" name="end" value="<%- connection.end%>"></label>
+                <label>Image URL: <input type="url" name="image" value="<%= connection.image%>"></label>
+                <button id="formbutton">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+ <%- include('../partials/footer.ejs')%>

@@ -1,0 +1,207 @@
+
+/* Layout for all webpages */
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #F3F3F3;
+    font-family: 'Cardo', serif;
+    overflow-x:hidden;
+}
+
+h1, h2, h3, h4, h5, h6, a, p, li {
+    font-family: 'Oswald', sans-serif;
+   }
+
+a {
+    text-decoration: none;
+}
+
+header {
+    margin: auto;
+    font-size: 1.3vw;
+}
+
+
+.nav {
+    float: right;
+    text-align: center;
+    display: flex;
+    color: #0D0D1D;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    list-style: none;
+    padding: 14px 14px;
+}
+
+.nav li a {
+    color: #0D0D1D;
+}
+
+#logo {
+    width: 20%;
+    height: 20%;
+}
+
+
+footer {
+    background-color:#0D0D1D;
+    position: relative;
+    padding: 14px 13px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    text-align: center;
+    display: inline-block;
+    font-size: 1.2vw;
+    margin-left: 20px;
+}
+
+footer ul li a {
+    color:#F3F3F3;
+}
+
+
+#gs_navigation {
+    background-color:#0D0D1D;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#gs_navigation a {
+    font-size: 1.5vw;
+    color: #F3F3F3;
+
+}
+
+#background_image {
+    background-image: url("/images/homeBackground.jpeg");
+    position: relative;
+    background-position: center;
+    height: 700px;
+    width: auto;
+    background-size: cover;
+    filter:brightness(90%);
+}
+
+/* Content for home page */
+
+
+#index_content-text {
+    text-align: center;
+    color: #0D0D1D;
+    margin-top: -20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#index_content-text p {
+    font-size: 1.4vw;
+}
+
+/* Content for Connections Page */
+
+#connections_content  {
+    padding: 30px;
+    position: relative;
+    left: 80px;
+}
+
+#connections_content ul {
+    list-style:none;
+}
+
+#connections_content ul li a {
+    color:#0D0D1D;;
+}
+
+/* Connection page */
+
+#connection {
+    padding: 30px;
+    position: relative;
+    left: 40px;
+}
+
+#connection img {
+    width: auto;
+    height: 180px;
+    vertical-align:middle;
+    margin: 0px;
+    padding-top: 40px;
+}
+
+#details {
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+
+.button {
+    background-color: #0D0D1D;
+    border:none;
+    color:#F3F3F3;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+/* CSS for New Connection Page */
+
+#newConnectionForm label {
+    display:block;
+    text-align:right;
+    width: 250px;
+
+}
+
+#newConnectionForm label input {
+    margin-bottom: 20px;
+}
+
+#newConnectionForm {
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+#newConnectionForm {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-top: 30px;
+}
+
+textarea {
+    vertical-align: top;
+}
+
+#formbutton {
+    background-color: #0D0D1D;
+    border:none;
+    color:#F3F3F3;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Other CSS styling */
+
+
+
+
+
+
+
+
+
